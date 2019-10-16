@@ -18,6 +18,10 @@ class School
   end
 
   def sort
-    @roster.values.sort
+    student_list = @roster.values
+    student_list.each do |list|
+      list.sort!
+    end
+    @roster
   end
 end
